@@ -62,7 +62,7 @@ For example:
 
 ```
 {
-	"name:name": "Montreal",
+	"wof:name": "Montreal",
 	"wof:lang": [ "eng", "fre" ],
 	"name:eng_p": "Montreal",
 	"name:eng_a": "YMQ",
