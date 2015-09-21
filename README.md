@@ -77,3 +77,5 @@ For example:
 * https://github.com/whosonfirst/whosonfirst-placetypes
 * https://github.com/whosonfirst/whosonfirst-dates
 * https://github.com/whosonfirst/whosonfirst-sources
+* https://github.com/whosonfirst/py-mapzen-whosonfirst-names
+* https://github.com/whosonfirst/py-mapzen-whosonfirst-languages
