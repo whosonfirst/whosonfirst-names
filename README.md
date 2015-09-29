@@ -2,7 +2,39 @@
 
 What things are called in Who's On First
 
-## Names and aliases (and languages)
+## Names and aliases (and languages) – aka RFC 5646
+
+_Note: If you're reading this notice it means that we are still in the process of backfilling the [whosonfirst-data repository](https://github.com/whosonfirst/whosonfirst-data) and the RFC 5646 changes described here are not live yet._
+
+Who's On First uses a variation of [RFC 5646](http://www.rfc-editor.org/rfc/rfc5646.txt) for identifying names. The W3C's [Language tags in HTML and XML](http://www.w3.org/International/articles) page describes RFC 5646 like this:
+
+> RFC 5646 caters for more types of subtag, and allows you to combine them in various ways. While this may appear to make life much more complicated, generally speaking choosing language tags will continue to be a simple matter - however, where you need additional power it will be available to you. In fact, for most people, RFC 5646 should actually make life simpler in a number of ways – for one thing, there is only one place you need to look now for valid subtags.
+
+> Although it provides some additional options for identifying common language variations, RFC 5646 includes all of the tags that were previously valid. If you have been using RFC 1766, RFC 3066, or RFC 4646 you do not need to make any changes to your tags.
+
+> The list below shows the various types of subtag that are available. We will work our way through these and how they are used in the sections that follow.
+
+> language-extlang-script-region-variant-extension-privateuse
+
+Who's On First uses RFC 5646 labels as follows: 
+
+* We follow the same structure outlined in RFC 5646 but use `_` (underbar) characters instead of `-` (dash) characters for delimiting individual properties of a language identifier.
+
+* We use three-letter country codes (rather than two-letter codes) to identify the primary language.
+
+* We assume the use assume that either the "script" or "region" subtags or both may be used, although neither is required.
+
+* As of this writing we assume that neither the "extlang" or the "variant" subtags will be used.
+
+* We use private extensions, specifically a `-x-[NAME_TYPE]` label.
+
+_Sometimes RFC 5646 is referred to as BCP (Best Current Practice) 47._
+
+### BCP 47 comformance
+
+TBW
+
+## A short history
 
 In the beginning:
 
@@ -70,6 +102,10 @@ For example:
 	"name:kor_p": "몬트리올",
 }
 ```
+
+But wait, there's more!
+
+One day we met [@nyampire](https://github.com/nyampire) who told us that he had [a gazetteer of places published by the Japanese government](https://github.com/nyampire/Gazetteer_JP_2007) that contained place names in Kanji, Kana and English. Since Kanji is a script the solution described above doesn't work. So now we're using RFC 5646 and subtags.
 
 ## See also
 
