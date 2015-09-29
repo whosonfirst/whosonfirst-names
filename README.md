@@ -32,7 +32,7 @@ _Sometimes RFC 5646 is referred to as BCP (Best Current Practice) 47._
 
 ### BCP 47 comformance
 
-TBW
+TBW. Basically [what the Unicode people did](http://www.unicode.org/reports/tr35/#BCP_47_Conformance).
 
 ### Code-y bits (and backwards compatibility)
 
