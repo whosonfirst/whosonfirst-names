@@ -4,7 +4,7 @@ What things are called in Who's On First
 
 ## Names and aliases (and languages) – aka RFC 5646
 
-_Note: If you're reading this notice it means that we are still in the process of backfilling the [whosonfirst-data repository](https://github.com/whosonfirst/whosonfirst-data) and the RFC 5646 changes described here are not live yet._
+_Note: If you're reading this notice it means that we are still in the process of backfilling the [whosonfirst-data repository](https://github.com/whosonfirst/whosonfirst-data) and not all of the RFC 5646 related changes described here may be live yet._
 
 Who's On First uses a variation of [RFC 5646](http://www.rfc-editor.org/rfc/rfc5646.txt) for identifying names. The W3C's [Language tags in HTML and XML](http://www.w3.org/International/articles) page describes RFC 5646 like this:
 
@@ -16,27 +16,39 @@ Who's On First uses a variation of [RFC 5646](http://www.rfc-editor.org/rfc/rfc5
 
 > language-extlang-script-region-variant-extension-privateuse
 
-Who's On First uses RFC 5646 labels as follows: 
+### RFC 5646 (BCP 47) comformance
+
+_Sometimes RFC 5646 is referred to as BCP (Best Current Practice) 47._
 
 * We follow the same structure outlined in RFC 5646 but use `_` (underbar) characters instead of `-` (dash) characters for delimiting individual properties of a language identifier.
 
 * We use three-letter country codes (rather than two-letter codes) to identify the primary language.
 
-* We assume the use assume that either the "script" or "region" subtags or both may be used, although neither is required.
+* The use of either the "script" or "region" subtags is allowed, although neither is required.
 
-* As of this writing we assume that neither the "extlang" or the "variant" subtags will be used.
+* While not explicitly forbidden neither the "extlang" or the "variant" subtags are commonly used, and Who's On First tools for parsing name labels may not support them.
 
 * We use private extensions, specifically a `-x-[NAME_TYPE]` label.
 
-_Sometimes RFC 5646 is referred to as BCP (Best Current Practice) 47._
+### RFC 5646 (BCP 47) tag conversion
 
-### BCP 47 comformance
+1. Replace the "_" separators with "-"
+2. You probably want to replace 3-letter country codes with 2-letter country codes
 
-TBW. Basically [what the Unicode people did](http://www.unicode.org/reports/tr35/#BCP_47_Conformance).
+#### For example
 
+```
+eng_x_preferred → en-x-preferred
+fre_ca_x_variant → fr-ca-x-variant
+```
+     
 ### Code-y bits (and backwards compatibility)
 
-TBW. See also: https://github.com/whosonfirst/py-mapzen-whosonfirst-names
+The [mapzen.whosonfirst.names](https://github.com/whosonfirst/py-mapzen-whosonfirst-names) Python library provides libraries and functions for converting between `Who's on First`, `Geoplanet` and `RFC 5646 subtags`.
+
+_Note: When converting to subtags the library does convert three-letter country codes to two-letter country codes._
+
+For example:
 
 ```
 import mapzen.whosonfirst.names
