@@ -30,3 +30,5 @@ based on country / locale / etc.
 ```
 
 So this is that document.
+
+There's probably enough use case around including both common full hierarchy labels (`San Francisco, Califonia, United States`) and common-optional feature name only labels (`Portland, Maine`, `Portland, Oregon`) which are common in Germany and less so in other places.
