@@ -4,8 +4,6 @@ What things are called in Who's On First
 
 ## Names and aliases (and languages) – aka RFC 5646
 
-_Note: If you're reading this notice it means that we are still in the process of backfilling the [whosonfirst-data repository](https://github.com/whosonfirst/whosonfirst-data) and not all of the RFC 5646 related changes described here may be live yet._
-
 Who's On First uses a variation of [RFC 5646](http://www.rfc-editor.org/rfc/rfc5646.txt) for identifying names. The W3C's [Language tags in HTML and XML](http://www.w3.org/International/articles) page describes RFC 5646 like this:
 
 > RFC 5646 caters for more types of subtag, and allows you to combine them in various ways. While this may appear to make life much more complicated, generally speaking choosing language tags will continue to be a simple matter - however, where you need additional power it will be available to you. In fact, for most people, RFC 5646 should actually make life simpler in a number of ways – for one thing, there is only one place you need to look now for valid subtags.
