@@ -165,9 +165,4 @@ One day we met [@nyampire](https://github.com/nyampire) who told us that he had 
 
 ## See also
 
-* https://github.com/whosonfirst/whosonfirst-data
-* https://github.com/whosonfirst/whosonfirst-placetypes
-* https://github.com/whosonfirst/whosonfirst-dates
-* https://github.com/whosonfirst/whosonfirst-sources
-* https://github.com/whosonfirst/py-mapzen-whosonfirst-names
-* https://github.com/whosonfirst/py-mapzen-whosonfirst-languages
+* https://github.com/whosonfirst/whosonfirst-docs
