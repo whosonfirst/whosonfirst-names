@@ -20,7 +20,7 @@ _Sometimes RFC 5646 is referred to as BCP (Best Current Practice) 47._
 
 * We follow the same structure outlined in RFC 5646 but use `_` (underbar) characters instead of `-` (dash) characters for delimiting individual properties of a language identifier.
 
-* We use three-letter country codes (rather than two-letter codes) to identify the primary language.
+* We use three-letter language codes (rather than two-letter codes) to identify the primary language.
 
 * The use of either the "script" or "region" subtags is allowed, although neither is required.
 
@@ -31,7 +31,7 @@ _Sometimes RFC 5646 is referred to as BCP (Best Current Practice) 47._
 ### RFC 5646 (BCP 47) tag conversion
 
 1. Replace the "_" separators with "-"
-2. You probably want to replace 3-letter country codes with 2-letter country codes
+2. You probably want to replace 3-letter language codes with 2-letter language codes
 
 #### For example
 
@@ -44,7 +44,7 @@ fre_ca_x_variant → fr-ca-x-variant
 
 The [mapzen.whosonfirst.names](https://github.com/whosonfirst/py-mapzen-whosonfirst-names) Python library provides libraries and functions for converting between `Who's on First`, `Geoplanet` and `RFC 5646 subtags`.
 
-_Note: When converting to subtags the library does convert three-letter country codes to two-letter country codes._
+_Note: When converting to subtags the library does convert three-letter language codes to two-letter language codes._
 
 For example:
 
