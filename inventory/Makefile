@@ -1,0 +1,2 @@
+inventory:
+	python ./inventory.py
