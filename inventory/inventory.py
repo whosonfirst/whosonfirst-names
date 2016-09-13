@@ -22,12 +22,12 @@ if __name__ == '__main__':
         "ben",	# proposed UN
         "hin",	# proposed UN
         "tur",	# proposed UN
-        "ger",	# because tizen
-        "jap",	# because tizen
-        "kor",	# because tizen
-        "ita",	# because tizen
-        "gre",	# because tizen
-        "vie",	# because tizen
+        "ger",	# because tilezen
+        "jap",	# because tilezen
+        "kor",	# because tilezen
+        "ita",	# because tilezen
+        "gre",	# because tilezen
+        "vie",	# because tilezen
     )
     
     crawl = mapzen.whosonfirst.utils.crawl("/usr/local/data/whosonfirst-data/data", inflate=True)
