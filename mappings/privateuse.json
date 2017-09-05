@@ -1,4 +1,8 @@
 [
+    { "wof:label": "colloquial", "rfc5646:label": "col" },
+    { "wof:label": "historic", "rfc5646:label": "hist", "wof:notes": "deprecated" },
+    { "wof:label": "historical", "rfc5646:label": "hist" },
     { "wof:label": "preferred", "rfc5646:label": "pref" },
+    { "wof:label": "unknown", "rfc5646:label": "unk" },
     { "wof:label": "variant", "rfc5646:label": "var" }
 ]
