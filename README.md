@@ -26,7 +26,7 @@ _Sometimes RFC 5646 is referred to as BCP (Best Current Practice) 47._
 
 * While not explicitly forbidden neither the "extlang" or the "variant" subtags are commonly used, and Who's On First tools for parsing name labels may not support them.
 
-* We use private extensions, specifically a `-x-[NAME_TYPE]` label.
+* We use private extensions, specifically a `-x-[NAME_TYPE]` label. We also use private extensions that are longer than the maximum 8-characters per RFC 5646. A mapping (between WOF names and shortened RFC 5646 compliant extensions) does not exist, as of this writing, but will be provided.
 
 ### RFC 5646 (BCP 47) tag conversion
 
