@@ -74,9 +74,9 @@ Would yield:
 
 ```
 fin_p
-fin_x_prefered
-fin-x-prefered
-fin_x_prefered
+fin_x_preferred
+fin-x-preferred
+fin_x_preferred
 fin_p
 eng_s
 eng_x_colloquial
