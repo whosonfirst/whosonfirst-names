@@ -20,9 +20,9 @@ _Sometimes RFC 5646 is referred to as BCP (Best Current Practice) 47._
 
 * We follow the same structure outlined in RFC 5646 but use `_` (underbar) characters instead of `-` (dash) characters for delimiting individual properties of a language identifier.
 
-* We use three-letter language codes (rather than two-letter codes) to identify the primary language.
+* We use three-letter language codes (e.g.: `eng` rather than `en` two-letter codes) to identify the primary language.
 
-* The use of either the "script" or "region" subtags is allowed, although neither is required.
+* The use of either the "script" (e.g.: `kor_latn`) or "region" (e.g.: `eng_ca`) subtags is allowed, although neither is required.
 
 * While not explicitly forbidden neither the "extlang" or the "variant" subtags are commonly used, and Who's On First tools for parsing name labels may not support them.
 
